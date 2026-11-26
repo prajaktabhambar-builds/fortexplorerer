@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100" fill="none">
+    <defs>
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f5d77f"/>
+            <stop offset="50%" stop-color="#c59b27"/>
+            <stop offset="100%" stop-color="#8f6e16"/>
+        </linearGradient>
+        <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1f4e2e"/>
+            <stop offset="100%" stop-color="#0e2415"/>
+        </linearGradient>
+    </defs>
+    <!-- Fort Shield Emblem -->
+    <g transform="translate(15, 10)">
+        <!-- Shield Background -->
+        <path d="M40 0 C65 0 80 15 80 40 C80 65 50 80 40 85 C30 80 0 65 0 40 C0 15 15 0 40 0 Z" fill="url(#shieldGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+        <!-- Rising Sun Rays -->
+        <circle cx="40" cy="35" r="16" fill="url(#goldGrad)" opacity="0.3"/>
+        <path d="M40 12 L40 18 M23 20 L27 24 M57 20 L53 24 M16 35 L22 35 M64 35 L58 35" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+        <!-- Fort Bastion Ramparts -->
+        <path d="M22 55 L22 38 L27 38 L27 42 L33 42 L33 38 L37 38 L37 42 L43 42 L43 38 L47 38 L47 42 L53 42 L53 38 L58 38 L58 55 Z" fill="#ffffff" opacity="0.95"/>
+        <!-- Saffron Flag atop Bastion -->
+        <path d="M40 38 L40 22 L52 27 L40 32 Z" fill="#e65100"/>
+        <!-- Fort Archway / Gate -->
+        <path d="M36 55 L36 46 C36 43.5 44 43.5 44 46 L44 55 Z" fill="#0e2415"/>
+    </g>
+    <!-- Brand Typography -->
+    <text x="110" y="48" font-family="'Cinzel', 'Georgia', serif" font-size="30" font-weight="800" letter-spacing="2.5" fill="#163820">FORT EXPLORER</text>
+    <text x="112" y="70" font-family="'Inter', sans-serif" font-size="11.5" font-weight="600" letter-spacing="3" fill="#8f6e16">MAHARASHTRA HERITAGE TOURISM</text>
+</svg>

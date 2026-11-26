@@ -1,0 +1,18 @@
+{
+  "name": "Fort Explorer - Maharashtra Tourism & Heritage Platform",
+  "short_name": "FortExplorer",
+  "description": "Discover History, Explore Heritage, Create Memories across Maharashtra Forts.",
+  "start_url": "index.php",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf8f5",
+  "theme_color": "#163820",
+  "icons": [
+    {
+      "src": "assets/images/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

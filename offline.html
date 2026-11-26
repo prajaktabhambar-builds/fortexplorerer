@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You are Offline - Fort Explorer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #faf8f5;
+            color: #1e2124;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .offline-card {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 2px solid #c59b27;
+            padding: 40px 30px;
+            max-width: 550px;
+            text-align: center;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+        }
+        .offline-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #eaf1ec;
+            color: #163820;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            margin: 0 auto 20px;
+        }
+        .btn-heritage {
+            background: #163820;
+            color: #ffffff;
+            border: 1px solid #c59b27;
+            padding: 10px 24px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.25s ease;
+        }
+        .btn-heritage:hover {
+            background: #c59b27;
+            color: #0d2214;
+        }
+    </style>
+</head>
+<body>
+
+<div class="offline-card">
+    <div class="offline-icon">
+        <i class="fa-solid fa-cloud-slash text-warning"></i>
+    </div>
+    <h2 class="fw-bold text-success font-heritage mb-2" style="font-family:'Cinzel',serif;">You are Currently Offline</h2>
+    <p class="text-muted mb-4 small" style="line-height:1.7;">
+        It looks like you've ventured into a remote Sahyadri valley without an active internet connection. Don't worry — previously cached forts, itinerary stops, and heritage data are still accessible.
+    </p>
+
+    <div class="p-3 bg-light rounded-3 mb-4 text-start small border">
+        <h6 class="fw-bold mb-1 text-dark"><i class="fa-solid fa-compass me-2 text-warning"></i>Trekking Safety in Remote Areas:</h6>
+        <p class="mb-0 text-secondary">Keep your GPS enabled. If descending near dusk, stick strictly to marked stone stairways and stone cairns.</p>
+    </div>
+
+    <div class="d-flex gap-2 justify-content-center">
+        <button type="button" class="btn btn-heritage" onclick="window.location.reload();">
+            <i class="fa-solid fa-rotate-right me-1"></i>Try Reconnecting
+        </button>
+        <button type="button" class="btn btn-outline-dark" onclick="window.history.back();">
+            <i class="fa-solid fa-arrow-left me-1"></i>Go Back
+        </button>
+    </div>
+</div>
+
+</body>
+</html>
